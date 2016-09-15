@@ -1,6 +1,6 @@
 {
-  "name": "My Ionic App",
-  "short_name": "My Ionic App",
+  "name": "Trottr",
+  "short_name": "Trottr",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
