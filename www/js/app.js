@@ -14,11 +14,6 @@ var trottr = angular.module('trottr', ['ionic', 'ngRoute', 'ngResource', 'ui.rou
 
 .config(function($stateProvider, $urlRouterProvider){
   $stateProvider
-  .state('auth', {
-    url: '/',
-    templateUrl: 'views/auth.html',
-    controller: 'AuthController'
-  })
   .state('login', {
     url: '/login',
     templateUrl: 'views/login.html',
@@ -45,5 +40,5 @@ var trottr = angular.module('trottr', ['ionic', 'ngRoute', 'ngResource', 'ui.rou
     controller: 'MapController'
   });
 
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/login');
 });
