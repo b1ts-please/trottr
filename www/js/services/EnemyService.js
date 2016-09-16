@@ -13,4 +13,45 @@ trottr.service('EnemyService', function(){
   this.getEnemyHealth = function(){
     return this.enemyHealth;
   }
+
+  this.setEnemyDamage = function(enemyDamage){
+    this.enemyDamage = enemyDamage;
+  }
+
+  this.getEnemyDamage = function(){
+    return this.enemyDamage;
+  }
+
+  this.setEnemySpeed = function(enemySpeed){
+    this.enemySpeed = enemySpeed;
+  }
+
+  this.getEnemySpeed = function(){
+    return this.enemySpeed;
+  }
+
+  this.setEnemyBlock = function(enemyBlock){
+    this.enemyBlock = enemyBlock;
+  }
+
+  this.getEnemyBlock = function(){
+    return this.enemyBlock;
+  }
+
+  this.setEnemyExperience = function(enemyExperience){
+    this.enemyExperience = enemyExperience;
+  }
+
+  this.getEnemyExperience = function(){
+    return this.enemyExperience;
+  }
+
+  this.setEnemylevel = function(enemyLevel){
+    this.enemylevel = enemyLevel;
+  }
+
+  this.getEnemyLevel = function(){
+    return this.enemyLevel;
+  }
+
 });
