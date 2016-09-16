@@ -4,7 +4,7 @@ trottr.controller('MapController', function($scope){
   var plotlist;
   var plotlayers=[];
 
-  map = new L.Map('map');
+  map = new L.Map('map',{zoomControl:false});
 
 
 	// create the tile layer with correct attribution
