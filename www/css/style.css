@@ -203,3 +203,7 @@ h3{
   height: 1.5em;
   padding: 0.1em 0;
 }
+
+.leaflet-control{
+  display: none;
+}
