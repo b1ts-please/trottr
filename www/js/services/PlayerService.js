@@ -14,7 +14,7 @@ trottr.service('PlayerService', function(){
     this.playerLevel = playerlevel;
   }
 
-  this.getplayerLevel = function(){
+  this.getPlayerLevel = function(){
     return this.playerLevel;
   }
 
