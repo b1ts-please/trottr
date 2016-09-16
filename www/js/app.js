@@ -34,6 +34,10 @@ var trottr = angular.module('trottr', ['ionic', 'ngRoute', 'ngResource'])
     .when('/home', {
       controller: "HomeController",
       templateUrl: "/views/home.html"
+    })
+    .when('/map', {
+      controller: "MapController",
+      templateUrl: "/views/map.html"
     });
   $routeProvider.otherwise({ redirectTo: '/' });
 });
