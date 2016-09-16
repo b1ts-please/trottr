@@ -38,6 +38,11 @@ var trottr = angular.module('trottr', ['ionic', 'ngRoute', 'ngResource', 'ui.rou
     url: '/home',
     templateUrl: 'views/home.html',
     controller: 'HomeController'
+  })
+  .state('map', {
+    url: '/map',
+    templateUrl: 'views/map.html',
+    controller: 'MapController'
   });
 
   $urlRouterProvider.otherwise('/');
