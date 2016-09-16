@@ -9,7 +9,7 @@ body{
 }
 
 html, body, #map {
-    height: 100%;
+    height: 600px; //needs to be changed
 }
 
 *, *:hover, *:focus{
