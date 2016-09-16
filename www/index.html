@@ -38,14 +38,18 @@
 
     <!-- Services -->
     <script src="js/services/EnemyService.js"></script>
-
+    <script src="js/services/PlayerService.js"></script>
+    <script src="js/services/ShieldService.js"></script>
+    <script src="js/services/WeaponService.js"></script>
     <!-- Controllers -->
     <script src="js/controllers/AuthController.js"></script>
     <script src="js/controllers/AuthLoginController.js"></script>
     <script src="js/controllers/AuthRegisterController.js"></script>
+    <script src="js/controllers/AuthUsernameController.js"></script>
+    <script src="js/controllers/HomeController.js"></script>
     <script src="js/controllers/MapController.js"></script>
   </head>
   <body ng-app="trottr">
-    <div class="container" ng-view=""></div>
+    <div class="container" ui-view></div>
   </body>
 </html>

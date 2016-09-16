@@ -1,4 +1,4 @@
-var trottr = angular.module('trottr', ['ionic', 'ngRoute', 'ngResource'])
+var trottr = angular.module('trottr', ['ionic', 'ngRoute', 'ngResource', 'ui.router'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -12,32 +12,38 @@ var trottr = angular.module('trottr', ['ionic', 'ngRoute', 'ngResource'])
   });
 })
 
-.config(function($routeProvider) {
-  $routeProvider
-    .when('/', {
-      controller: "AuthController",
-      templateUrl: "/views/auth.html"
-    })
-    .when('/login', {
-      controller: "AuthLoginController",
-      templateUrl: "/views/login.html"
-    })
-    .when('/register', {
-      controller: "AuthRegisterController",
-      templateUrl: "/views/register.html"
-    })
-    .when('/username', {
-      controller: "AuthUsernameController",
-      templateUrl: "/views/username.html"
-    })
-    // temporary
-    .when('/home', {
-      controller: "HomeController",
-      templateUrl: "/views/home.html"
-    })
-    .when('/map', {
-      controller: "MapController",
-      templateUrl: "/views/map.html"
-    });
-  $routeProvider.otherwise({ redirectTo: '/' });
+.config(function($stateProvider, $urlRouterProvider){
+  $stateProvider
+  .state('auth', {
+    url: '/',
+    templateUrl: 'views/auth.html',
+    controller: 'AuthController'
+  })
+  .state('login', {
+    url: '/login',
+    templateUrl: 'views/login.html',
+    controller: 'AuthLoginController'
+  })
+  .state('register', {
+    url: '/register',
+    templateUrl: 'views/register.html',
+    controller: 'AuthRegisterController'
+  })
+  .state('username', {
+    url: '/username',
+    templateUrl: 'views/username.html',
+    controller: 'AuthUsernameController'
+  })
+  .state('home', {
+    url: '/home',
+    templateUrl: 'views/home.html',
+    controller: 'HomeController'
+  })
+  .state('map', {
+    url: '/map',
+    templateUrl: 'views/map.html',
+    controller: 'MapController'
+  });
+
+  $urlRouterProvider.otherwise('/');
 });
