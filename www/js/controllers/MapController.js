@@ -23,11 +23,11 @@ trottr.controller('MapController', function($scope){
 //Create Icons
   var PoIIcon = L.Icon.extend({
 	       options: {
-          			shadowUrl: 'img/icon-shadow.png',
-          			iconSize:     [60, 40],
-          	    shadowSize:   [50, 64],
-          	    iconAnchor:   [22, 94],
-          	    shadowAnchor: [4, 62],
+          			shadowUrl: 'img/shadow.png',
+          			iconSize:     [90, 60],
+          	    shadowSize:   [80, 80],
+          	    iconAnchor:   [45, 30],
+          	    shadowAnchor: [15, 60],
           	    popupAnchor:  [-3, -76]
           		}
           	});
