@@ -4,6 +4,12 @@ body{
   font-weight: normal;
   color: #333;
   background-color: #F7F7F7;
+  padding: 0;
+  margin: 0;
+}
+
+html, body, #map {
+    height: 600px; //needs to be changed
 }
 
 *, *:hover, *:focus{
