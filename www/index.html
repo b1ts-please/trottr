@@ -5,6 +5,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
 
+    <!-- App Manifest -->
     <link rel="manifest" href="manifest.json">
 
     <!-- un-comment this code to enable service worker
@@ -16,30 +17,34 @@
       }
     </script>-->
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <!-- Styles -->
+    <!-- <link href="lib/ionic/css/ionic.css" rel="stylesheet"> -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="assets/leaflet/leaflet.css" rel="stylesheet">
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
-
-    <!-- ionic/angularjs js -->
+    <!-- Ionic default assets -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
-
-    <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
-
-    <!-- your app's js -->
     <script src="js/app.js"></script>
-  </head>
-  <body ng-app="starter">
 
-    <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-      </ion-header-bar>
-      <ion-content>
-      </ion-content>
-    </ion-pane>
+    <!-- Plugins -->
+    <script src="assets/angular/angular-route.min.js"></script>
+    <script src="assets/angular/angular-resource.min.js"></script>
+    <script src="assets/leaflet/leaflet-src.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/EnemyService.js"></script>
+    <script src="js/services/PlayerService.js"></script>
+    <script src="js/services/ShieldService.js"></script>
+    <script src="js/services/WeaponService.js"></script>
+    <!-- Controllers -->
+    <script src="js/controllers/AuthLoginController.js"></script>
+    <script src="js/controllers/AuthRegisterController.js"></script>
+    <script src="js/controllers/AuthUsernameController.js"></script>
+    <script src="js/controllers/MapController.js"></script>
+  </head>
+  <body ng-app="trottr">
+    <div ui-view=""></div>
   </body>
 </html>
