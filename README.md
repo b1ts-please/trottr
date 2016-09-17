@@ -5,6 +5,7 @@ The demo game created during GGULIVRR@LODZ 2016 project.
 
 ## Install
 This install tutorial is for android system mobile phones. Be sure you have installed latest Java Development Kit, Android SDK and Node.js
+
 1. Clone repo
 2. Open project directory using command line editor and type:
     1. `npm install`
