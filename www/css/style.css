@@ -1,1 +1,209 @@
-/* Empty. Add your own CSS if you like */
+html, body, body > div, .container, #map{
+  height: 100%;
+}
+
+body{
+  font-family: sans-serif;
+  font-size: 1.4em;
+  font-weight: normal;
+  color: #000;
+  background-color: #F7F7F7;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, a:hover, a:focus{
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover, a:focus{
+  color: inherit;
+}
+
+h3{
+  margin: 0.3em 0;
+  font-size: 1em;
+}
+
+.btn{
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 0.4em 0.5em;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(110,110,110,1);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(110,110,110,1);
+  box-shadow: 5px 5px 10px 0px rgba(110,110,110,1);
+}
+
+.btn-social-login{
+  font-size: 0.8em;
+  padding: 0.7em 0.5em;
+  color: #FFF;
+  border: none;
+}
+
+.btn-social-login-facebook{ background-color: #3b5998; }
+
+.btn-social-login-google-plus{ background-color: #dd4b39; }
+
+.container{
+  padding: 0.8em 1.2em;
+  position: relative;
+  z-index: 50;
+}
+
+.row, .form-line{
+  display: block;
+  position: relative;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+}
+
+.form-line{
+  margin-bottom: 0.4em;
+}
+
+.form-item{
+  width: 100%;
+  background-color: #FFF;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 4px;
+  padding: 0.9em 1.2em;
+  max-width: 100%;
+  font-size: 16px;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(110,110,110,1);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(110,110,110,1);
+  box-shadow: 5px 5px 10px 0px rgba(110,110,110,1);
+}
+
+.divider{
+  min-height: 1px;
+  border-top: 1px solid #000;
+  padding-top: 0.5em;
+  margin-top: 0.5em;
+}
+
+.row:after, .form-line:after{
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+[class^="col-"]{
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.col-1{ width: 8.333333% }
+.col-2{ width: 16.666666%; }
+.col-3{ width: 25%; }
+.col-4{ width: 33.333333%; }
+.col-5{ width: 41.666666%; }
+.col-6{ width: 50%; }
+.col-7{ width: 58.333333%; }
+.col-8{ width: 66.666666%; }
+.col-9{ width: 75%; }
+.col-10{ width: 83.333333%; }
+.col-11{ width: 91.666666%; }
+.col-12{ width: 100%; }
+
+.map-background{
+  position: relative;
+  z-index: 0;
+  height: 100%;
+}
+
+.map-background-cover{
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/map-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.bottom-panel{
+  position: absolute;
+  left: 0;
+  bottom: 0.5em;
+}
+
+.logo-wrapper{
+  text-align: center;
+  width: 100%;
+  padding: 0.3em 0;
+}
+
+.img-responsive{
+  max-width: 100%;
+}
+
+.buttons-wrapper{
+  text-align: center;
+  width: 100%;
+}
+
+.buttons-wrapper .row{
+  text-align: center;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-button{
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 24px;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.auth-button:hover, .auth-button:focus{
+  color: #333;
+}
+
+.auth-form{
+  text-align: center;
+}
+
+.big-icon{
+  border: 2px solid #333;
+  border-radius: 50%;
+  font-size: 3.2em;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.1em 0;
+}
+
+.leaflet-control{
+  display: none;
+}
