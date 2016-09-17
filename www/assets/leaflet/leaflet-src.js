@@ -5054,7 +5054,7 @@ L.Path = (L.Path.SVG && !window.L_PREFER_CANVAS) || !L.Browser.canvas ? L.Path :
 		}
 
 		this._requestUpdate();
-		
+
 		this.fire('remove');
 		this._map = null;
 	},
@@ -8101,7 +8101,7 @@ L.Control.Attribution = L.Control.extend({
 	},
 
 	onAdd: function (map) {
-		this._container = L.DomUtil.create('div', 'leaflet-control-attribution');
+		this._container = L.DomUtil.create('div', "");
 		L.DomEvent.disableClickPropagation(this._container);
 
 		for (var i in map._layers) {
@@ -8109,7 +8109,7 @@ L.Control.Attribution = L.Control.extend({
 				this.addAttribution(map._layers[i].getAttribution());
 			}
 		}
-		
+
 		map
 		    .on('layeradd', this._onLayerAdd, this)
 		    .on('layerremove', this._onLayerRemove, this);
