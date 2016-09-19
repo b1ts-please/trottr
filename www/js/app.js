@@ -24,6 +24,11 @@ var trottr = angular.module('trottr', ['ionic', 'ngRoute', 'ngResource', 'ui.rou
     templateUrl: 'views/register.html',
     controller: 'AuthRegisterController'
   })
+  .state('battle', {
+    url: '/battle',
+    templateUrl: 'views/battle.html',
+    controller: 'BattleController'
+  })
   .state('username', {
     url: '/username',
     templateUrl: 'views/username.html',
