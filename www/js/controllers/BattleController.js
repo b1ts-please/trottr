@@ -21,4 +21,8 @@ trottr.controller('BattleController', function($scope){
   function enemyAttack(){};
   function enemyDefend(){};
 
+  $scope.battle = function(){
+
+  };
+
 });
