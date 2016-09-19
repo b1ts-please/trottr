@@ -16,4 +16,9 @@ trottr.controller('BattleController', function($scope){
      console.log("untouch banter")
   );
 
+  function attack(enemy){};
+  function defend(enemy){};
+  function enemyAttack(){};
+  function enemyDefend(){};
+
 });
