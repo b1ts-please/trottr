@@ -3,8 +3,11 @@ trottr.controller('BattleController', function($scope){
   var canvas = angular.element(document.querySelector('#battle-canvas'))[0];
   var context = canvas.getContext('2d');
 
-  var shield;
-  var weapon;
+  var weapon    = 7,
+  health        = 100,
+  enemyWeapon   = 5,
+  enemeyHealth  = 100;
+
 
   var rosalka = new Image();
   rosalka.src = '../../img/rosalka.png';
@@ -19,10 +22,26 @@ trottr.controller('BattleController', function($scope){
      console.log("untouch banter")
   );
 
-  function attack(enemy){};
-  function defend(enemy){};
-  function enemyAttack(){};
-  function enemyDefend(){};
+  function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+  function attack(){
+    //do animation and lower enemy health by weapon*random number + 3
+    var damage = getRandomArbitrary(3,weapon};
+      enemyHealth = enemyHealth-damage;
+  };
+  function enemyAttack(){
+    //do animation and lower player health by weapon*random number + 1
+    var damage = getRandomArbitrary(1,weapon};
+      Health = enemyHealth-damage;
+  };
+  function defend(){
+    //if enemyAttack = true player health increases by enemy attack value
+  };
+  // function enemyDefend(){
+  //
+  // };
 
   $scope.battle = function(){
 
