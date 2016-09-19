@@ -6,6 +6,9 @@ trottr.controller('BattleController', function($scope){
   var shield;
   var weapon;
 
+  var rosalka = new Image();
+  rosalka.src = '../../img/rosalka.png';
+
   canvas.addEventListener(
      'touchstart',
      console.log("touch banter")
