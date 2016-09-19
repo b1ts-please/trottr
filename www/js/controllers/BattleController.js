@@ -1,14 +1,19 @@
 trottr.controller('BattleController', function($scope){
+
   var canvas = angular.element(document.querySelector('#battle-canvas'))[0];
   var context = canvas.getContext('2d');
 
+  var shield;
+  var weapon;
 
-  shield.on('click', function(){
+  canvas.addEventListener(
+     'touchstart',
+     console.log("touch banter")
+  );
 
-  });
-
-  weapon.on('click', function(){
-      
-  });
+  canvas.addEventListener(
+     'touchend',
+     console.log("untouch banter")
+  );
 
 });
