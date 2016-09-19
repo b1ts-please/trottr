@@ -24,8 +24,8 @@ trottr.controller('MapController', function($scope){
   var PoIIcon = L.Icon.extend({
     options: {
 			shadowUrl: 'img/shadow.png',
-			iconSize:     [90, 60],
-	    shadowSize:   [80, 80],
+			iconSize:     [110, 110],
+	    shadowSize:   [100, 100],
 	    iconAnchor:   [45, 30],
 	    shadowAnchor: [15, 60],
 	    popupAnchor:  [-3, -76]
