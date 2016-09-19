@@ -286,3 +286,55 @@ h3{
   padding: 0.5em 1em;
   font-size: 0.7em;
 }
+
+.fab{
+  position: absolute;
+  top: 0.4em;
+  left: 0.4em;
+  background-color: #b83326;
+  color: #FFF;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(105,105,105,0.7);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(105,105,105,0.7);
+  box-shadow: 5px 5px 5px 0px rgba(105,105,105,0.7);
+}
+
+.fab-user{
+  top: 0.4em;
+  left: auto;
+  right: 5.6em;
+}
+
+.fab-shop{
+  top: 0.4em;
+  left: auto;
+  right: 3em;
+  background-color: #6DA690;
+}
+
+.fab-setting{
+  top: 0.4em;
+  left: auto;
+  right: 0.4em;
+  background-color: #85531B;
+}
+
+.fab-location{
+  top: auto;
+  bottom: 0.4em;
+  left: auto;
+  right: 0.4em;
+  background-color: #D9C787;
+}
+
+.fab a{
+  display: inline-block;
+  color: #FFF;
+  font-size: 1.2em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
