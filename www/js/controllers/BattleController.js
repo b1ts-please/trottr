@@ -10,7 +10,12 @@ trottr.controller('BattleController', function($scope){
 
 
   var rosalka = new Image();
-  rosalka.src = '../../img/rosalka.png';
+  rosalka.src = 'img/rosalka.png';
+
+
+
+
+
 
   canvas.addEventListener(
      'touchstart',
@@ -28,13 +33,13 @@ trottr.controller('BattleController', function($scope){
 
   function attack(){
     //do animation and lower enemy health by weapon*random number + 3
-    var damage = getRandomArbitrary(3,weapon};
+    var damage = getRandomArbitrary(3,weapon);
       enemyHealth = enemyHealth-damage;
   };
   function enemyAttack(){
     //do animation and lower player health by weapon*random number + 1
-    var damage = getRandomArbitrary(1,weapon};
-      Health = enemyHealth-damage;
+    var damage = getRandomArbitrary(1,weapon);
+      health = enemyHealth-damage;
   };
   function defend(){
     //if enemyAttack = true player health increases by enemy attack value
@@ -42,6 +47,9 @@ trottr.controller('BattleController', function($scope){
   // function enemyDefend(){
   //
   // };
+  function potion(){
+    health += 10;
+  }
 
   $scope.battle = function(){
 
