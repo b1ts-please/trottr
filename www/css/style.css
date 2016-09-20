@@ -4,7 +4,7 @@ html, body, body > div, .container, #map{
 
 body{
   font-family: sans-serif;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: normal;
   color: #000;
   background-color: #F7F7F7;
@@ -355,4 +355,180 @@ h3{
   -o-filter: blur(3px);
   -ms-filter: blur(3px);
   filter: blur(3px);
+}
+
+.user-profile{
+  padding: 0.5em;
+  -webkit-box-shadow: 0 2px 2px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 2px 2px 0px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+.user-profile-image{
+  float: left;
+  padding: 0.5em;
+  display: inline-block;
+  background-color: black;
+  color: #FFF;
+  border-radius: 50%;
+  width: 2.2em;
+  height: 2.2em;
+  text-align: center;
+  margin: 0.3em 0.5em 0 0;
+}
+
+.user-profile-description{
+  float: left;
+  padding: 0.4em;
+  font-size: 0.8em;
+}
+
+.user-profile-description h3{
+  margin: 0.1em 0;
+}
+
+.user-profile-description p{
+  margin: 0;
+}
+
+.tabs .tab-ctrl{
+  float: left;
+  text-align: center;
+  font-size: 0.9em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  width: 33.33333%;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.tabs .tab-ctrl:last-child{
+  border-right: none;
+}
+
+.tabs .tab-ctrl.active{
+  background-color: #000;
+  color: #FFF;
+}
+
+.tabs-content-wrapper > div{
+  display: none;
+  padding: 0.7em;
+}
+
+.tab-content h4{
+  font-size: 0.9em;
+  margin: 0 0 0.5em 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+.weapon-wrapper .weapon-image{
+  width: 33%;
+  float: left;
+  padding: 0 0.3em;
+}
+
+.weapon-wrapper .weapon-description{
+  width: 66%;
+  float: left;
+  padding: 1.1em 0.3em;
+}
+
+.weapon-wrapper .weapon-description p, .weapon-wrapper .weapon-description h5{
+  margin: 0;
+  font-weight: normal;
+}
+
+.weapon-wrapper .weapon-description h5{
+  font-size: 1em;
+}
+
+.weapon-wrapper .weapon-description p{
+  font-size: 0.7em;
+}
+
+.badge{
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(112,112,112,1);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(112,112,112,1);
+  box-shadow: 5px 5px 5px 0px rgba(112,112,112,1);
+  background-color: #FFF;
+  padding: 0.3em 0;
+  margin-bottom: 0.5em;
+}
+
+.badge .badge-icon{
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.badge .badge-icon span{
+  display: inline-block;
+  margin: 0 auto;
+  width: 1.7em;
+  height: 1.7em;
+  background: #000;
+  color: #FFF;
+  border-radius: 50%;
+  position: relative;
+}
+
+.badge .badge-icon span i{
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.badge .badge-description{
+  float: left;
+  width: 80%;
+}
+
+.badge .badge-description h5, .badge .badge-description p{
+  margin: 0;
+}
+
+.badge .badge-description h5{
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.badge .badge-description p{
+  font-size: 0.7em;
+}
+
+.weapons{
+  margin-bottom: 0.7em;
+}
+
+.mini-card{
+  background-color: #FFF;
+  text-align: center;
+}
+
+.mini-card-image{
+  padding: 0.3em 0;
+  background-color: #FFF;
+}
+
+.mini-card-image img{
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.mini-card-name{
+  min-height: 2.3em;
+}
+
+.mini-card-name h2{
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0 0 0.3em 0;
+  font-weight: normal;
 }

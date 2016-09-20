@@ -61,9 +61,7 @@ trottr.controller('MapController', function($scope){
   });
 
   $scope.ghostClose = function(){
-    angular.forEach(angular.element(document.querySelector('.ghost')), function(value, key){
-      angular.element(value).css('display', 'none');
-    });
+    angular.element(document.querySelector('.ghost')).css('display', 'none');
   }
 
   function openModal(imageSrc, head, body){
