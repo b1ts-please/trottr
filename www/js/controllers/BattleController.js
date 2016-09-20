@@ -9,8 +9,8 @@ trottr.controller('BattleController', function($scope){
   enemeyHealth  = 100;
 
 
-  var rosalka = new Image();
-  rosalka.src = 'img/rosalka.png';
+  // this.rosalka = new Image();
+  // this.rosalka.src = '../img/rosalka.png';
 
 
 
