@@ -3,14 +3,36 @@ trottr.controller('BattleController', function($scope){
   var canvas = angular.element(document.querySelector('#battle-canvas'))[0];
   var context = canvas.getContext('2d');
 
+
+  function clear()
+  {
+    context.clearRect(0,0,100,100);
+  }
+  context.fillStyle = "red";
+  context.fillRect(0,0,100,100);
+
+  clear();
+
+  var rosalka = new Image();
+  rosalka.src = '../img/rosalka.png';
+
+  rosalka.onload = function() {
+    context.drawImage(rosalka, 0,0,100,100);
+  };
+
+  context.d
+
+  context.fill();
+
+
+
   var weapon    = 7,
   health        = 100,
   enemyWeapon   = 5,
   enemeyHealth  = 100;
 
 
-  // this.rosalka = new Image();
-  // this.rosalka.src = '../img/rosalka.png';
+
 
 
 
