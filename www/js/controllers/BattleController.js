@@ -14,13 +14,13 @@ trottr.controller('BattleController', function($scope){
   clear();
 
   var rosalka = new Image();
-  rosalka.src = '../img/rosalka.png';
+  rosalka.src = 'img/rosalka.png';
 
   rosalka.onload = function() {
-    context.drawImage(rosalka, 0,0,100,100);
+    context.drawImage(rosalka, 0,0,300,600);
   };
 
-  context.d
+  // context.d
 
   context.fill();
 
