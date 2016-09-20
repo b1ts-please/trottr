@@ -17,7 +17,7 @@ trottr.controller('BattleController', function($scope){
   rosalka.src = 'img/rosalka.png';
 
   rosalka.onload = function() {
-    context.drawImage(rosalka, 0,0,300,600);
+    context.drawImage(rosalka, 250,50,600,800);
   };
 
   // context.d
