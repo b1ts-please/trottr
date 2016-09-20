@@ -4,7 +4,7 @@ html, body, body > div, .container, #map{
 
 body{
   font-family: sans-serif;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: normal;
   color: #000;
   background-color: #F7F7F7;
@@ -96,10 +96,22 @@ h3{
   margin-top: 0.5em;
 }
 
-.row:after, .form-line:after{
+.row:after, .form-line:after, .clearfix:after{
   content: ' ';
   display: block;
   clear: both;
+}
+
+.pull-left{
+  float: left;
+}
+
+.pull-right{
+  float: right;
+}
+
+.text-center{
+  text-align: center;
 }
 
 [class^="col-"]{
@@ -190,6 +202,18 @@ h3{
   color: #333;
 }
 
+.btn-ghost{
+  padding: 0.5em 0.8em;
+  color: #FFF;
+  display: inline-block;
+  background-color: #b83326;
+  cursor: pointer;
+}
+
+.btn-ghost:hover, .btn-ghost:focus{
+  color: #FFF;
+}
+
 .auth-form{
   text-align: center;
 }
@@ -206,4 +230,306 @@ h3{
 
 .leaflet-control{
   display: none;
+}
+
+.ghost{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.ghost-content{
+  display: block;
+  width: 16em;
+  height: 21em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-image: url('../img/paper-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding: 1em 1em 0.5em 1em;
+}
+
+.ghost-head{
+  padding: 0.3em 1em;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+.ghost-head h2{
+  margin: 0.3em 0 0 0;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.ghost-body{
+  padding: 0.5em 1em;
+  font-size: 0.6em;
+  text-align: center;
+}
+
+.ghost-foot{
+  padding: 0.5em 1em;
+  font-size: 0.7em;
+}
+
+.fab{
+  position: absolute;
+  top: 0.4em;
+  left: 0.4em;
+  background-color: #b83326;
+  color: #FFF;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(105,105,105,0.7);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(105,105,105,0.7);
+  box-shadow: 5px 5px 5px 0px rgba(105,105,105,0.7);
+}
+
+.fab-user{
+  top: 0.4em;
+  left: auto;
+  right: 5.6em;
+}
+
+.fab-shop{
+  top: 0.4em;
+  left: auto;
+  right: 3em;
+  background-color: #6DA690;
+}
+
+.fab-setting{
+  top: 0.4em;
+  left: auto;
+  right: 0.4em;
+  background-color: #85531B;
+}
+
+.fab-location{
+  top: auto;
+  bottom: 0.4em;
+  left: auto;
+  right: 0.4em;
+  background-color: #D9C787;
+}
+
+.fab a{
+  display: inline-block;
+  color: #FFF;
+  font-size: 1.2em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+#battle-canvas
+{
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/map-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.user-profile{
+  padding: 0.5em;
+  -webkit-box-shadow: 0 2px 2px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 2px 2px 0px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+.user-profile-image{
+  float: left;
+  padding: 0.5em;
+  display: inline-block;
+  background-color: black;
+  color: #FFF;
+  border-radius: 50%;
+  width: 2.2em;
+  height: 2.2em;
+  text-align: center;
+  margin: 0.3em 0.5em 0 0;
+}
+
+.user-profile-description{
+  float: left;
+  padding: 0.4em;
+  font-size: 0.8em;
+}
+
+.user-profile-description h3{
+  margin: 0.1em 0;
+}
+
+.user-profile-description p{
+  margin: 0;
+}
+
+.tabs .tab-ctrl{
+  float: left;
+  text-align: center;
+  font-size: 0.9em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  width: 33.33333%;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.tabs .tab-ctrl:last-child{
+  border-right: none;
+}
+
+.tabs .tab-ctrl.active{
+  background-color: #000;
+  color: #FFF;
+}
+
+.tabs-content-wrapper > div{
+  display: none;
+  padding: 0.7em;
+}
+
+.tab-content h4{
+  font-size: 0.9em;
+  margin: 0 0 0.5em 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+.weapon-wrapper .weapon-image{
+  width: 33%;
+  float: left;
+  padding: 0 0.3em;
+}
+
+.weapon-wrapper .weapon-description{
+  width: 66%;
+  float: left;
+  padding: 1.1em 0.3em;
+}
+
+.weapon-wrapper .weapon-description p, .weapon-wrapper .weapon-description h5{
+  margin: 0;
+  font-weight: normal;
+}
+
+.weapon-wrapper .weapon-description h5{
+  font-size: 1em;
+}
+
+.weapon-wrapper .weapon-description p{
+  font-size: 0.7em;
+}
+
+.badge{
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(112,112,112,1);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(112,112,112,1);
+  box-shadow: 5px 5px 5px 0px rgba(112,112,112,1);
+  background-color: #FFF;
+  padding: 0.3em 0;
+  margin-bottom: 0.5em;
+}
+
+.badge .badge-icon{
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.badge .badge-icon span{
+  display: inline-block;
+  margin: 0 auto;
+  width: 1.7em;
+  height: 1.7em;
+  background: #000;
+  color: #FFF;
+  border-radius: 50%;
+  position: relative;
+}
+
+.badge .badge-icon span i{
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.badge .badge-description{
+  float: left;
+  width: 80%;
+}
+
+.badge .badge-description h5, .badge .badge-description p{
+  margin: 0;
+}
+
+.badge .badge-description h5{
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.badge .badge-description p{
+  font-size: 0.7em;
+}
+
+.weapons{
+  margin-bottom: 0.7em;
+}
+
+.mini-card{
+  background-color: #FFF;
+  text-align: center;
+}
+
+.mini-card-image{
+  padding: 0.3em 0;
+  background-color: #FFF;
+}
+
+.mini-card-image img{
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.mini-card-name{
+  min-height: 2.3em;
+}
+
+.mini-card-name h2{
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0 0 0.3em 0;
+  font-weight: normal;
 }

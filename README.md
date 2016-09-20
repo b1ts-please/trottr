@@ -25,7 +25,7 @@ This game is open-sourced software licensed under the MIT license.
 ## Creators
 * Creative Director Karima El Hachimi <karimaelhachimi92@gmail.com>
 * Business Analyst Nadire Yimamu <nadiraemam@gmail.com>
-* Visual Developer Joana Filipa Bezerra Fontes <>
-* Game Developer Comrac De Faoite <cwhite788@gmail.com>
+* Visual Developer Joana Filipa Bezerra Fontes <joana_bezerra@hotmail.com>
+* Game Developer Cormac De Faoite <cwhite788@gmail.com>
 * Game Developer Kieran W. Hoey <kieranhoey1995@gmail.com>
 * Lead Developer Dominik Nowak <kontakt@dominiknowak.xyz>
