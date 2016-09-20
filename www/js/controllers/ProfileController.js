@@ -25,5 +25,5 @@ trottr.controller('ProfileController', function($scope){
     }
   }
 
-  $scope.openTab('equipment');
+  $scope.openTab('armor');
 });

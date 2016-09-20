@@ -17,7 +17,7 @@ trottr.controller('BattleController', function($scope){
   rosalka.src = 'img/rosalka.png';
 
   rosalka.onload = function() {
-    context.drawImage(rosalka, 0,0,300,600);
+    context.drawImage(rosalka, 250,50,600,800);
   };
 
   // context.d
@@ -37,43 +37,16 @@ trottr.controller('BattleController', function($scope){
 
 
 
-   function touchStart(e) {
-         // Prevent players from inadvertently dragging the game canvas
-         e.preventDefault();
-         var x = e.changedTouches[0].pageX;
-         if (x < canvas.width/2)
-            {
-              defend();
-            }
-        else if (x > canvas.width/2)
-            {
-              attack();
-            }
-      };
-
-      function touchEnd(e) {
-        var x = e.changedTouches[0].pageX;
-        if (x < canvas.width/2)
-            {
-
-            }
-            else if (x > canvas.width/2)
-            {
-
-            }
-           e.preventDefault();
-        },
-
 
 
   canvas.addEventListener(
      'touchstart',
-       touchStart();
+     console.log("touch banter")
   );
 
   canvas.addEventListener(
      'touchend',
-      touchEnd();
+     console.log("untouch banter")
   );
 
   function getRandomArbitrary(min, max) {

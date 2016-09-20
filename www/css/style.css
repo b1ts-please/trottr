@@ -58,6 +58,14 @@ h3{
 
 .btn-social-login-google-plus{ background-color: #dd4b39; }
 
+.btn-earn-more{
+  background-color: #b83326;
+  color: #FFF;
+  border: none;
+  padding: 0.3em 0.4em;
+  width: auto;
+}
+
 .container{
   padding: 0.8em 1.2em;
   position: relative;
@@ -532,4 +540,30 @@ h3{
   margin: 0;
   padding: 0 0 0.3em 0;
   font-weight: normal;
+}
+
+.mini-card-button a{
+  display: block;
+  margin: 0.3em 0.7em;
+  border-radius: 4px;
+  background: #b83326;
+  color: #FFF;
+  font-size: 0.8em;
+  padding: 0.3em 0;
+  cursor: pointer;
+}
+
+.store-content{
+  padding: 0.7em;
+}
+
+.store-content h4{
+  font-size: 0.9em;
+  margin: 0 0 0.5em 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+.store-content .weapons, .store-content .shields, .store-content .coins{
+  margin-bottom: 1.1em;
 }
