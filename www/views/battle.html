@@ -1,5 +1,56 @@
-<div id = 'arena'>
-		 	<canvas id = 'battle-canvas' width='1080' height = '1920'>
-	 			Your browser does not support HTML5 canvas.
-		 	</canvas>
+<div class="battle map-background">
+	<div class="map-background-cover"></div>
+	<div class="container">
+		<div class="top-bar clearfix">
+			<div class="demon-health">
+				<div id="demon-health" class="progress-bar">
+					<div class="progress"></div>
+					<div class="progress-bar-cursor">300</div>
+				</div>
+			</div>
+			<a class="btn-escape" ng-click="leaveBattle()"><i class="fa fa-times"></i></a>
+		</div>
+		<div class="demon">
+			<img src="img/rosalka.png" class="img-responsive" alt="">
+		</div>
+		<div class="controls clearfix">
+			<div class="attack">
+				<a ng-click="attack()">
+					<img src="img/primary-sword.png" class="img-responsive" alt="">
+				</a>
+			</div>
+			<div class="defense">
+				<a ng-click="defense()">
+					<img src="img/primary-shield.png" class="img-responsive" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="bottom-bar">
+			<div class="user-level">
+				<span>2</span>
+			</div>
+			<div class="player-health">
+				<div id="player-health" class="progress-bar">
+					<div class="progress"></div>
+					<div class="progress-bar-cursor">500</div>
+				</div>
+			</div>
+		</div>
+		<div id="ghost-battle" class="ghost">
+		  <div class="ghost-content">
+		    <div class="ghost-head">
+		      <div class="big-icon-wrapper">
+		        <i class="fa"></i>
+		      </div>
+		      <h2></h2>
+		    </div>
+		    <div class="ghost-body"></div>
+		    <div class="ghost-foot">
+		      <div class="text-center">
+		        <a href="#/map" class="btn-ghost">Back to map</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
 </div>

@@ -295,6 +295,20 @@ h3{
   font-size: 0.7em;
 }
 
+.ghost .big-icon-wrapper{
+  color: #000;
+  font-size: 10em;
+  text-align: center;
+}
+
+.ghost .big-icon-wrapper .fa-smile-o{
+  color: #39BD08;
+}
+
+.ghost .big-icon-wrapper .fa-times{
+  color: #b83326;
+}
+
 .fab{
   position: absolute;
   top: 0.4em;
@@ -566,4 +580,111 @@ h3{
 
 .store-content .weapons, .store-content .shields, .store-content .coins{
   margin-bottom: 1.1em;
+}
+
+.user-level{
+  float: left;
+  width: 20%;
+}
+
+.user-level span{
+  display: inline-block;
+  border: 3px solid #000;
+  width: 1.8em;
+  height: 1.8em;
+  text-align: center;
+  padding: 0.2em;
+  border-radius: 50%;
+}
+
+.demon-health{
+  float: left;
+  width: 60%;
+  padding-top: 0.6em;
+  margin-left: 20%;
+}
+
+.progress-bar{
+  display: block;
+  position: relative;
+  background-color: #757475;
+  min-height: 0.4em;
+}
+
+.progress-bar .progress{
+  width: 100%;
+  background-color: #39BD08;
+  min-height: 0.4em;
+}
+
+.progress-bar-cursor{
+  position: absolute;
+  left: 95%;
+  top: -50%;
+  width: 10%;
+  height: 200%;
+  background-color: #b83326;
+  font-size: 0.6em;
+  text-align: center;
+  padding: 0.2em 0;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.btn-escape{
+  position: absolute;
+  top: 0.8em;
+  right: 1.2em;
+  padding: 0.2em;
+}
+
+.demon img{
+  transform:scale(0.8); -webkit-transform:scale(0.8);
+  -moz-transform:scale(0.8); -o-transform:scale(0.8);
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(110,110,110,1));
+  -webkit-filter: drop-shadow(5px 5px 5px #6E6E6E);
+  filter: drop-shadow(5px 5px 5px #6E6E6E);
+}
+
+.battle .controls{
+  margin-bottom: 0.8em;
+}
+
+.battle .controls .attack{
+  float: left;
+  width: 30%;
+}
+
+.battle .controls .defense{
+  float: right;
+  width: 30%;
+}
+
+.battle .controls .attack, .battle .controls .defense{
+  -webkit-filter: drop-shadow(5px 5px 5px #6E6E6E);
+  filter: drop-shadow(5px 5px 5px #6E6E6E);
+  position: relative;
+}
+
+.battle .controls .attack a, .battle .controls .defense a{
+  position: relative;
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.battle .controls .attack a{
+  top: -3em;
+}
+
+.battle .controls .defense a{
+  left: -3em;
+}
+
+.player-health{
+  float: left;
+  width: 60%;
+  padding-top: 0.6em;
 }
