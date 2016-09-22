@@ -1,4 +1,4 @@
-html, body, body > div, .container, #map{
+html, body, body > div, .container, #map-wrapper, #map, .profile{
   height: 100%;
 }
 
@@ -57,6 +57,14 @@ h3{
 .btn-social-login-facebook{ background-color: #3b5998; }
 
 .btn-social-login-google-plus{ background-color: #dd4b39; }
+
+.btn-earn-more{
+  background-color: #b83326;
+  color: #FFF;
+  border: none;
+  padding: 0.3em 0.4em;
+  width: auto;
+}
 
 .container{
   padding: 0.8em 1.2em;
@@ -171,6 +179,10 @@ h3{
   padding: 0.3em 0;
 }
 
+.logo-wrapper img{
+  width: 40%;
+}
+
 .img-responsive{
   max-width: 100%;
 }
@@ -203,15 +215,30 @@ h3{
 }
 
 .btn-ghost{
-  padding: 0.5em 0.8em;
+  padding: 1.4em 2.2em;
   color: #FFF;
   display: inline-block;
-  background-color: #b83326;
+  /*background-color: #b83326;*/
+  background-image: url('../img/btn-ghost.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
   cursor: pointer;
 }
 
 .btn-ghost:hover, .btn-ghost:focus{
   color: #FFF;
+}
+
+.btn-ghost-close{
+  padding: 0.5em 0.8em;
+  background-color: transparent;
+  background-image: none;
+  color: #000;
+}
+
+.btn-ghost-close:hover, .btn-ghost-close:focus{
+  color: #000;
 }
 
 .auth-form{
@@ -287,6 +314,20 @@ h3{
   font-size: 0.7em;
 }
 
+.ghost .big-icon-wrapper{
+  color: #000;
+  font-size: 10em;
+  text-align: center;
+}
+
+.ghost .big-icon-wrapper .fa-smile-o{
+  color: #39BD08;
+}
+
+.ghost .big-icon-wrapper .fa-times{
+  color: #b83326;
+}
+
 .fab{
   position: absolute;
   top: 0.4em;
@@ -358,11 +399,16 @@ h3{
   filter: blur(3px);
 }
 
+.profile, .store{
+  background-image: url('../img/paper-pattern.jpg');
+}
+
 .user-profile{
   padding: 0.5em;
   -webkit-box-shadow: 0 2px 2px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0 2px 2px 0px rgba(0,0,0,0.5);
   box-shadow: 0 2px 2px 0px rgba(0,0,0,0.5);
+  background-color: #F7F7F7;
 }
 
 .user-profile-image{
@@ -532,4 +578,141 @@ h3{
   margin: 0;
   padding: 0 0 0.3em 0;
   font-weight: normal;
+}
+
+.mini-card-button{
+  padding-bottom: 0.2em;
+}
+
+.mini-card-button a{
+  display: block;
+  margin: 0.3em 0.7em;
+  border-radius: 4px;
+  background: #b83326;
+  color: #FFF;
+  font-size: 0.8em;
+  padding: 0.3em 0;
+  cursor: pointer;
+}
+
+.store-content{
+  padding: 0.7em;
+}
+
+.store-content h4{
+  font-size: 0.9em;
+  margin: 0 0 0.5em 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+.store-content .weapons, .store-content .shields, .store-content .coins{
+  margin-bottom: 1.1em;
+}
+
+.user-level{
+  float: left;
+  width: 20%;
+}
+
+.user-level span{
+  display: inline-block;
+  border: 3px solid #000;
+  width: 1.8em;
+  height: 1.8em;
+  text-align: center;
+  padding: 0.2em;
+  border-radius: 50%;
+}
+
+.demon-health{
+  float: left;
+  width: 60%;
+  padding-top: 0.6em;
+  margin-left: 20%;
+}
+
+.progress-bar{
+  display: block;
+  position: relative;
+  background-color: #757475;
+  min-height: 0.4em;
+}
+
+.progress-bar .progress{
+  width: 100%;
+  background-color: #39BD08;
+  min-height: 0.4em;
+}
+
+.progress-bar-cursor{
+  position: absolute;
+  left: 95%;
+  top: -50%;
+  width: 10%;
+  height: 200%;
+  background-color: #b83326;
+  font-size: 0.6em;
+  text-align: center;
+  padding: 0.2em 0;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.btn-escape{
+  position: absolute;
+  top: 0.8em;
+  right: 1.2em;
+  padding: 0.2em;
+}
+
+.demon img{
+  transform:scale(0.8); -webkit-transform:scale(0.8);
+  -moz-transform:scale(0.8); -o-transform:scale(0.8);
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(110,110,110,1));
+  -webkit-filter: drop-shadow(5px 5px 5px #6E6E6E);
+  filter: drop-shadow(5px 5px 5px #6E6E6E);
+}
+
+.battle .controls{
+  margin-bottom: 0.8em;
+}
+
+.battle .controls .attack{
+  float: left;
+  width: 30%;
+}
+
+.battle .controls .defense{
+  float: right;
+  width: 30%;
+}
+
+.battle .controls .attack, .battle .controls .defense{
+  -webkit-filter: drop-shadow(5px 5px 5px #6E6E6E);
+  filter: drop-shadow(5px 5px 5px #6E6E6E);
+  position: relative;
+}
+
+.battle .controls .attack a, .battle .controls .defense a{
+  position: relative;
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.battle .controls .attack a{
+  top: -3em;
+}
+
+.battle .controls .defense a{
+  left: -3em;
+}
+
+.player-health{
+  float: left;
+  width: 60%;
+  padding-top: 0.6em;
 }

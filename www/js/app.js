@@ -43,6 +43,11 @@ var trottr = angular.module('trottr', ['ionic', 'ngRoute', 'ngResource', 'ui.rou
     url: '/profile',
     templateUrl: 'views/profile.html',
     controller: 'ProfileController'
+  })
+  .state('store', {
+    url: '/store',
+    templateUrl: 'views/store.html',
+    controller: 'StoreController'
   });
 
   $urlRouterProvider.otherwise('/login');

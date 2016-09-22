@@ -5,6 +5,7 @@ trottr.service('EnemyService', function(){
   this.enemyBlock = true;
   this.experience = 0;
   this.enemyLevel = 0;
+  this.enemyMaxHealth = 0;
 
   this.setEnemyHealth = function(enemyHealth){
     this.enemyHealth = enemyHealth;
@@ -52,6 +53,14 @@ trottr.service('EnemyService', function(){
 
   this.getEnemyLevel = function(){
     return this.enemyLevel;
+  }
+
+  this.setEnemyMaxHealth = function(enemyMaxHealth){
+    this.enemyMaxHealth = enemyMaxHealth;
+  }
+
+  this.getEnemyMaxHealth = function(){
+    return this.enemyMaxHealth;
   }
 
 });
