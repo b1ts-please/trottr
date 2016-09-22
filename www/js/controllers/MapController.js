@@ -45,7 +45,7 @@ trottr.controller('MapController', function($scope){
   L.marker([51.771791, 19.478403], {icon: museumIcon}).addTo(map);
   var parkMarker = L.marker([51.773472, 19.476705], {icon: parkIcon}).addTo(map);
   L.marker([51.775422, 19.461213], {icon: jewishIcon}).addTo(map);
-  L.marker([51.774771, 19.481104], {icon: christianIcon}).addTo(map);
+  var christianMarker = L.marker([51.774771, 19.481104], {icon: christianIcon}).addTo(map);
   L.marker([51.781408, 19.457570], {icon: sportsIcon}).addTo(map);
   L.marker([51.776790, 19.454710], {icon: monumentsIcon}).addTo(map);
   L.marker([51.779498, 19.482959], {icon: foodIcon}).addTo(map);
@@ -53,10 +53,13 @@ trottr.controller('MapController', function($scope){
   var drinkMarker = L.marker([51.771252, 19.468391], {icon: drinkIcon}).addTo(map);
 
   drinkMarker.on('click', function(){
-    openModal('img/church.jpg', 'St. Joseph Church', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.');
+    openModal('img/manufaktura.jpg', 'Manufaktura', 'The largest shopping centre in Poland');
+  });
+  christianMarker.on('click', function(){
+    openModal('img/church.jpg', 'St. Joseph Church', 'This church is the oldest and most humble house of worship in the city and possesses just one nave, a shingle roof and a tiny steeple.');
   });
   parkMarker.on('click', function(){
-    openModal('img/church.jpg', 'St. Joseph Church', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.');
+    openModal('img/third-of-may-park.jpg', '3 May Park', 'During the I WW trees from that park was cut by people who was looking for firewood');
   });
 
   $scope.ghostClose = function(){

@@ -1,4 +1,4 @@
-<div id="map"></div>
+<div id="map" data-tap-disabled="true"></div>
 <div class="fab fab-user">
   <a href="#/profile"><i class="fa fa-user"></i></a>
 </div>
@@ -22,7 +22,8 @@
     <div class="ghost-body"></div>
     <div class="ghost-foot">
       <div class="text-center">
-        <a href="#/battle" class="btn-ghost" ng-click="battle()">Somethings nearby</a>
+        <a href="#/battle" class="btn-ghost">Somethings nearby</a><br />
+        <a class="btn-ghost btn-ghost-close" ng-click="ghostClose()">Close</a>
       </div>
     </div>
   </div>

@@ -1,4 +1,4 @@
-html, body, body > div, .container, #map{
+html, body, body > div, .container, #map-wrapper, #map, .profile{
   height: 100%;
 }
 
@@ -179,6 +179,10 @@ h3{
   padding: 0.3em 0;
 }
 
+.logo-wrapper img{
+  width: 40%;
+}
+
 .img-responsive{
   max-width: 100%;
 }
@@ -211,15 +215,30 @@ h3{
 }
 
 .btn-ghost{
-  padding: 0.5em 0.8em;
+  padding: 1.4em 2.2em;
   color: #FFF;
   display: inline-block;
-  background-color: #b83326;
+  /*background-color: #b83326;*/
+  background-image: url('../img/btn-ghost.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
   cursor: pointer;
 }
 
 .btn-ghost:hover, .btn-ghost:focus{
   color: #FFF;
+}
+
+.btn-ghost-close{
+  padding: 0.5em 0.8em;
+  background-color: transparent;
+  background-image: none;
+  color: #000;
+}
+
+.btn-ghost-close:hover, .btn-ghost-close:focus{
+  color: #000;
 }
 
 .auth-form{
@@ -380,11 +399,16 @@ h3{
   filter: blur(3px);
 }
 
+.profile, .store{
+  background-image: url('../img/paper-pattern.jpg');
+}
+
 .user-profile{
   padding: 0.5em;
   -webkit-box-shadow: 0 2px 2px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0 2px 2px 0px rgba(0,0,0,0.5);
   box-shadow: 0 2px 2px 0px rgba(0,0,0,0.5);
+  background-color: #F7F7F7;
 }
 
 .user-profile-image{
@@ -554,6 +578,10 @@ h3{
   margin: 0;
   padding: 0 0 0.3em 0;
   font-weight: normal;
+}
+
+.mini-card-button{
+  padding-bottom: 0.2em;
 }
 
 .mini-card-button a{
