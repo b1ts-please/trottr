@@ -1,7 +1,11 @@
 Dundalk Institute of Technology
+
 Centria University of Applied Sciences
-University of Lodz
+
+University of Lodz (Faculty of Physics and Applied Informatics)
+
 Artesis-Planttijn College of Antwerp
+
 Ispgaya
 
 MIT License
