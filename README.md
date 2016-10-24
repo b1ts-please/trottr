@@ -1,7 +1,7 @@
 # Trottr
 Lodz is being haunted by Licho and all of its beautiful places are overtaken by evil creatures. Free the city by battling mythological monsters, collect all the cards and discover all Lodz has to offer you!
 
-The demo game created during GGULIVRR@LODZ 2016 project.
+The winning demo game created during GGULIVRR@LODZ 2016 project.
 
 ## Install
 This install tutorial is for android system mobile phones. Be sure you have installed latest Java Development Kit, Android SDK and Node.js
